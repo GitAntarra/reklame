@@ -54,7 +54,7 @@
 
                             <button type="submit" class="btn btn-primary" name="login">Login</button>
                             <hr />
-                            Not register ? <a href="register.php">click here </a>
+                            Not register ? <a href="<?= base_url()?>auth/register">click here </a>
                         </form>
                         <?php if($this->session->flashdata('msg')){ ?>
                             <div class='alert alert-danger'><?php echo $this->session->flashdata('msg'); ?></div>
